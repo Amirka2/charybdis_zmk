@@ -5,10 +5,12 @@ manifest:
     - name: badjeff
       url-base: https://github.com/badjeff
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: feat/pointers-with-input-processors
-      import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: urob
+      url-base: https://github.com/urob
+      revision: main
+      import:
+        file: west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
       revision: main
